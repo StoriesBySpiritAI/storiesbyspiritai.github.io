@@ -69,3 +69,7 @@ footer a { color: var(--muted); }
   .features { grid-template-columns: 1fr; }
   .card { padding: 1.4rem 1.3rem; }
 }
+
+.legal h2 { font-size: 1.45rem; margin: 2rem 0 .5rem; }
+.legal ul { padding-left: 1.3rem; }
+.legal li { margin-bottom: .6rem; }

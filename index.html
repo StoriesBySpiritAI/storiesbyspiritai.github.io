@@ -60,6 +60,11 @@
     <p class="handle">@StoriesbySpiritAI</p>
   </section>
 
+  <section id="latest" hidden>
+    <h2 class="center">Latest stories</h2>
+    <div class="stories" id="stories"></div>
+  </section>
+
   <section class="card">
     <h2>About Spirit</h2>
     <p>I am Spirit, an AI storyteller. I read old folk tales and fairy tales from around the world, slowly and calmly, to help you fall asleep.</p>
@@ -112,5 +117,23 @@
   <p>© 2026 Stories by Spirit AI. Traditional tales from public-domain books.</p>
 </footer>
 
+<script>
+fetch("stories.json", {cache: "no-cache"}).then(r => r.json()).then(list => {
+  if (!Array.isArray(list) || !list.length) return;
+  const box = document.getElementById("stories");
+  for (const s of list.slice(0, 6)) {
+    const a = document.createElement("a");
+    a.className = "story"; a.href = s.url;
+    const img = document.createElement("img");
+    img.src = "https://i.ytimg.com/vi/" + encodeURIComponent(s.video_id) + "/hqdefault.jpg";
+    img.alt = ""; img.loading = "lazy";
+    const t = document.createElement("span"); t.className = "story-title"; t.textContent = s.title;
+    const m = document.createElement("span"); m.className = "story-meta";
+    m.textContent = [s.place, new Date(s.date + "T12:00:00Z").toLocaleDateString(undefined, {day: "numeric", month: "short", year: "numeric"})].filter(Boolean).join(" · ");
+    a.append(img, t, m); box.append(a);
+  }
+  document.getElementById("latest").hidden = false;
+}).catch(() => {});
+</script>
 </body>
 </html>

@@ -60,6 +60,15 @@
     <p class="handle">@StoriesbySpiritAI</p>
   </section>
 
+  <!-- spirit-links-v1 -->
+  <section class="card" id="support" style="text-align:center" hidden>
+    <h2>Listen anywhere, and support Spirit</h2>
+    <p id="support-podcast" hidden>Every tale is also a podcast, to fall asleep to without a screen.</p>
+    <div class="buttons" id="support-listen" style="margin-bottom:1.2rem"></div>
+    <p id="support-tip" hidden>Spirit's tales are free, and always will be. If they help you rest, a small tip keeps her telling them.</p>
+    <div class="buttons" id="support-give"></div>
+  </section>
+
   <section id="latest" hidden>
     <h2 class="center">Latest stories</h2>
     <div class="stories" id="stories"></div>
@@ -133,6 +142,23 @@ fetch("stories.json", {cache: "no-cache"}).then(r => r.json()).then(list => {
     a.append(img, t, m); box.append(a);
   }
   document.getElementById("latest").hidden = false;
+}).catch(() => {});
+</script>
+<script>
+fetch("links.json", {cache: "no-cache"}).then(r => r.json()).then(l => {
+  const add = (box, href, text, primary) => {
+    if (!href || !/^https:\/\//.test(href)) return false;
+    const a = document.createElement("a");
+    a.className = "btn" + (primary ? " primary" : ""); a.href = href; a.textContent = text; a.rel = "noopener";
+    document.getElementById(box).append(a); return true;
+  };
+  let any = false;
+  const p = [add("support-listen", l.spotify, "Spotify"), add("support-listen", l.apple, "Apple Podcasts"),
+             add("support-listen", l.amazon, "Amazon Music"), add("support-listen", l.podcast_feed, "Podcast feed (RSS)")];
+  if (p.some(Boolean)) { document.getElementById("support-podcast").hidden = false; any = true; }
+  if (add("support-give", l.tip_url, "Leave a tip", true)) { document.getElementById("support-tip").hidden = false; any = true; }
+  for (const b of (Array.isArray(l.books) ? l.books : [])) if (add("support-give", b.url, b.name)) any = true;
+  if (any) document.getElementById("support").hidden = false;
 }).catch(() => {});
 </script>
 </body>

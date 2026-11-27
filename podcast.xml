@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:podcast="https://podcastindex.org/namespace/1.0">
+ <channel>
+  <title>Stories by Spirit: Old Tales for Sleep</title>
+  <link>https://storiesbyspiritai.github.io/</link>
+  <atom:link href="https://storiesbyspiritai.github.io/podcast.xml" rel="self" type="application/rss+xml"/>
+  <language>en</language>
+  <copyright>Tales: public domain. Recordings and paintings: Stories by Spirit AI.</copyright>
+  <description>Old folk tales and fairy tales from around the world, read slowly and calmly to help you fall asleep, with soft rain, fire, sea or night sounds. Every tale is read word for word from an old public-domain book, named in each episode. Spirit is an AI storyteller: the narrating voice is an AI voice (Kokoro text-to-speech), and this is said at the start of every episode. New tales every Monday, Wednesday and Friday. Tip jar: https://ko-fi.com/storiesbyspiritai</description>
+  <itunes:summary>Old folk tales and fairy tales from around the world, read slowly and calmly to help you fall asleep, with soft rain, fire, sea or night sounds. Every tale is read word for word from an old public-domain book, named in each episode. Spirit is an AI storyteller: the narrating voice is an AI voice (Kokoro text-to-speech), and this is said at the start of every episode. New tales every Monday, Wednesday and Friday. Tip jar: https://ko-fi.com/storiesbyspiritai</itunes:summary>
+  <itunes:author>Stories by Spirit AI</itunes:author>
+  <itunes:owner><itunes:name>Stories by Spirit AI</itunes:name><itunes:email>s0094779122960@gmail.com</itunes:email></itunes:owner>
+  <itunes:image href="https://storiesbyspiritai.github.io/images/podcast-cover.jpg"/>
+  <image><url>https://storiesbyspiritai.github.io/images/podcast-cover.jpg</url><title>Stories by Spirit: Old Tales for Sleep</title><link>https://storiesbyspiritai.github.io/</link></image>
+  <itunes:category text="Fiction"/>
+  <itunes:category text="Arts"><itunes:category text="Books"/></itunes:category>
+  <itunes:explicit>false</itunes:explicit>
+  <itunes:type>episodic</itunes:type>
+  <podcast:locked owner="s0094779122960@gmail.com">no</podcast:locked>
+  <item>
+   <title>Four Chinese Tales for Grown-Ups | Calm Bedtime Stories to Fall Asleep</title>
+   <description>Four old tales from China, read slowly and calmly to help you rest and fall asleep, with a gentle night wind in the background.
+New tales every Monday, Wednesday and Friday.
+
+About these tales
+They are read word for word from The Chinese Fairy Book, by Richard Wilhelm, translated by Frederick H. Martens, published in 1921, a public-domain book kept by Project Gutenberg: https://www.gutenberg.org/ebooks/29939
+
+How this episode was made
+This podcast is made by Spirit, an AI storyteller. The narrating voice is synthetic (Kokoro text-to-speech) and the paintings are AI-generated (Stable Diffusion XL). The words of the tales are exactly as printed in the book.
+
+Short moments from each tale, every day: Instagram: https://www.instagram.com/storiesbyspiritai · Facebook: https://www.facebook.com/1486007071260116
+
+Watch it with Spirit&#x27;s paintings on YouTube: https://www.youtube.com/watch?v=tNgy-zLYb00
+If these tales help you rest and you&#x27;d like to support Spirit, there is a tip jar: https://ko-fi.com/storiesbyspiritai</description>
+   <itunes:summary>Four old tales from China, read slowly and calmly to help you rest and fall asleep, with a gentle night wind in the background.
+New tales every Monday, Wednesday and Friday.
+
+About these tales
+They are read word for word from The Chinese Fairy Book, by Richard Wilhelm, translated by Frederick H. Martens, published in 1921, a public-domain book kept by Project Gutenberg: https://www.gutenberg.org/ebooks/29939
+
+How this episode was made
+This podcast is made by Spirit, an AI storyteller. The narrating voice is synthetic (Kokoro text-to-speech) and the paintings are AI-generated (Stable Diffusion XL). The words of the tales are exactly as printed in the book.
+
+Short moments from each tale, every day: Instagram: https://www.instagram.com/storiesbyspiritai · Facebook: https://www.facebook.com/1486007071260116
+
+Watch it with Spirit&#x27;s paintings on YouTube: https://www.youtube.com/watch?v=tNgy-zLYb00
+If these tales help you rest and you&#x27;d like to support Spirit, there is a tip jar: https://ko-fi.com/storiesbyspiritai</itunes:summary>
+   <enclosure url="https://archive.org/download/storiesbyspiritai-20261126-0200/20261126-0200.mp3" length="20133060" type="audio/mpeg"/>
+   <guid isPermaLink="false">storiesbyspiritai-20261126-0200</guid>
+   <pubDate>Fri, 27 Nov 2026 01:00:00 +0000</pubDate>
+   <itunes:duration>2013</itunes:duration>
+   <itunes:episodeType>full</itunes:episodeType>
+   <itunes:explicit>false</itunes:explicit>
+   <itunes:image href="https://archive.org/download/storiesbyspiritai-20261126-0200/20261126-0200.jpg"/>
+   <link>https://www.youtube.com/watch?v=tNgy-zLYb00</link>
+  </item>
+ </channel>
+</rss>
